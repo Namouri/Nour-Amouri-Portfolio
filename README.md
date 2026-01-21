@@ -1,73 +1,55 @@
-# React + TypeScript + Vite
+# Nour Amouri Portfolio💻
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is the personal portfolio website of **Nour Amouri**, showcasing skills, projects, experience, and a contact form with email functionality.
 
-Currently, two official plugins are available:
+<img width="500" height="393" alt="portfolioPic" src="https://github.com/user-attachments/assets/18b3371b-da51-4d79-bbc9-4a98d8a9f69f" />
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project has two main parts:
 
-## React Compiler
+1. **Frontend** – built with React, Vite, and TypeScript.
+2. **Backend** – built with Node.js and Express, handling the contact form submissions securely.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Hero Section**: Catchy introduction with animated buttons for projects and resume.  
+- **About Section**: Expandable experience cards showing detailed professional experience.  
+- **Projects Section**: Displays portfolio projects with images and descriptions.  
+- **Skills Section**: Interactive skill cards.  
+- **Contact Form**: Users can send messages via email. Backend is connected using Nodemailer or SendGrid.  
+- **Responsive Design**: Works perfectly on desktop, tablet, and mobile devices.  
+- **Expandable Experience Cards**: Cards show hints to tap/click and reveal more content without overlapping sections.
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+---
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Live Demo
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- https://nouramouri.vercel.app  
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Tech Stack
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Frontend**: React, Vite, TypeScript, CSS3, HTML5  
+- **Backend**: Node.js, Express, Nodemailer / SendGrid  
+- **Hosting**: Vercel (frontend), Render (backend)  
+- **Environment Variables**: Used for API URLs and email credentials (via `.env` or Vercel/Render secrets)
+
+---
+
+## Setup Instructions
+
+
+```bash
+###frontend
+git clone https://github.com/Namouri/portfolio-frontend.git
+cd portfolio-frontend
+npm install
+npm run dev
+
+### Backend
+git clone https://github.com/Namouri/portfolio-backend.git
+cd portfolio-backend
+npm install
+npm start
