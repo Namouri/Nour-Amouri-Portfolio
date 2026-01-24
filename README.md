@@ -25,8 +25,7 @@ The project has two main parts:
 
 ## Live Demo
 
-- https://nouramouri.vercel.app  
-
+- https://nouramouri.com/
 ---
 
 ## Tech Stack
