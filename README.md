@@ -1,8 +1,8 @@
-# Nour Amouri Portfolio💻
+# Nour Amouri's Portfolio💻
 
 This is the personal portfolio website of **Nour Amouri**, showcasing skills, projects, experience, and a contact form with email functionality.
 
-<img width="500" height="393" alt="portfolioPic" src="https://github.com/user-attachments/assets/18b3371b-da51-4d79-bbc9-4a98d8a9f69f" />
+<img width="500" height="383" alt="portfolioPic" src="https://github.com/user-attachments/assets/2b019f7e-4226-4b85-a5d2-8573b8c565f0" />
 
 The project has two main parts:
 
