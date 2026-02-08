@@ -4,6 +4,12 @@ This is the personal portfolio website of **Nour Amouri**, showcasing skills, pr
 
 <img width="500" height="383" alt="portfolioPic" src="https://github.com/user-attachments/assets/2b019f7e-4226-4b85-a5d2-8573b8c565f0" />
 
+The project is deployed using two separate repositories:
+
+Frontend (Vercel): [link](https://github.com/Namouri/portfolio-frontendnew)
+
+Backend (Render): [link](https://github.com/Namouri/portfolio-backendnew)
+
 The project has two main parts:
 
 1. **Frontend** – built with React, Vite, and TypeScript.
